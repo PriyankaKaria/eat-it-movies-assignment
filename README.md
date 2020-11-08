@@ -6,7 +6,7 @@ Filmopedia – Filmopedia is fully responsive, interactive application. That use
 <ul>
 <li>You can clone the repo from <a href="https://github.com/PriyankaKaria/eat-it-movies-assignment.git">eat-it-movies-assignment</a> on to your Desktop.</li>
 <li>Install the <a href="https://nodejs.org/en/download/">Node.js</a> in order to get npm </li>
-  <li>Open terminal/cmd and run npm run dev , open your broswer at http://localhost:3000/</li>
+  <li>Open terminal/cmd prompt and run npm run dev , open your broswer at http://localhost:3000/</li>
   </ul>
 
 
