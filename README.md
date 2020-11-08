@@ -16,6 +16,7 @@ Filmopedia – Filmopedia is fully responsive, interactive application. That use
 
 <ul>
   <li>React</li>
+<li>Html,Css,JavaScript</li>
   <li>Ajax </li>
   <li>Material UI</li>
   <li>REST api</li>
