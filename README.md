@@ -1,6 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About the app.
 Filmopedia – Filmopedia is fully responsive, interactive application. That use open source REST Api from <a href="https://www.themoviedb.org/documentation/api">The Movie Database</a> to fetch information about popular movies via search. 
