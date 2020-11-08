@@ -8,7 +8,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import StarIcon from '@material-ui/icons/Star';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import ShareIcon from '@material-ui/icons/Share';
+import ScheduleRoundedIcon from '@material-ui/icons/ScheduleRounded';
 import Modal from '@material-ui/core/Modal';
 
 const styles = {
@@ -64,19 +65,22 @@ class MovieDetails extends React.Component {
                         <Grid item xs={12}>
                             <Grid container>
                                 <Grid item xs={3}>
-                                    <StarIcon />
+                                    <StarIcon className={classes.label} />
                                     <Typography variant="body1" component="span">
-                                        {movieDetail.vote_average}
+                                    <sup><big> <b>    {movieDetail.vote_average} </b></big></sup> 
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={3} >
+                                    <FavoriteIcon className={classes.label} />
+                                    <Typography variant="body1" component="span">
+                                    <sup><big> <b> {movieDetail.vote_count} </b></big></sup> 
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={3}>
-                                    <FavoriteIcon />
-                                    <Typography variant="body1" component="span">
-                                        {movieDetail.vote_count}
+                                <ScheduleRoundedIcon className={classes.label} />
+                                <Typography variant="span" component="span">
+                                      <sup><big> <b>  {movieDetail.runtime} Mins </b></big></sup> 
                                     </Typography>
-                                </Grid>
-                                <Grid item xs={3}>
-                                    Share Button Here
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -94,34 +98,34 @@ class MovieDetails extends React.Component {
                             <Grid container>
                                 <Grid item xs={6}>
                                     <Typography gutterBottom variant="body1" component="h4" className={classes.label}>
-                                        Relesase Date:
+                                      <b>  Relesase Date: </b>
                                     </Typography>
                                     <Typography gutterBottom variant="p" component="p">
-                                        {movieDetail.release_date}
+                                    <b> {movieDetail.release_date} </b> 
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography gutterBottom variant="body1" component="h4" className={classes.label}>
-                                        Running Time(Mins):
+                                    <b>  Status: </b>
                                     </Typography>
                                     <Typography gutterBottom variant="p" component="p">
-                                        {movieDetail.runtime}
+                                    <b>  {movieDetail.status} </b>
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography gutterBottom variant="body1" component="h4" className={classes.label}>
-                                        Budget:
+                                    <b>  Budget: </b>
                                     </Typography>
                                     <Typography gutterBottom variant="p" component="p" >
-                                        {movieDetail.budget}
+                                    <b>    {movieDetail.budget} </b>
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography gutterBottom variant="body1" component="h4" className={classes.label}>
-                                        Revenue:
+                                    <b>  Revenue: </b>
                                     </Typography>
                                     <Typography gutterBottom variant="p" component="p">
-                                        {movieDetail.revenue}
+                                    <b>   {movieDetail.revenue} </b>
                                     </Typography>
                                 </Grid>
                             </Grid>

@@ -23,7 +23,6 @@ a:active {
   text-decoration: none;
 }
 
-
 .searchResult-text {
   line-height: 21px;
   overflow: hidden;
@@ -45,7 +44,7 @@ a:active {
 }
 
 .searchResult-date {
-    color: #00FC87;
+    color:teal;
 }
 
 .searchResult-link {

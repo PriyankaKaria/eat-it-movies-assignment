@@ -95,7 +95,7 @@ const Header = () => {
     }
 
     const inputProps = {
-        placeholder: 'Type a programming language',
+        placeholder: 'Type a Movie name...',
         value: searchValue,
         onChange
     };
@@ -134,7 +134,7 @@ const Header = () => {
     );
 
     return (
-        <AppBar position="fixed">
+        <AppBar position="fixed" style={{ backgroundColor: "teal" }}>
             <Toolbar>
                 <Link to="/" style={{ color: "white" }}>
                     <Typography variant="h6" className={classes.title}>
@@ -153,8 +153,8 @@ const Header = () => {
                     theme={{
                         suggestionsContainer: {
                             position: "absolute",
-                            background: "teal",
-                            width: 300
+                            background: "white",
+                            width: 280
                         },
                         suggestionsList: {
                             listStyle: "none",
